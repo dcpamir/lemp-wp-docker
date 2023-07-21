@@ -33,7 +33,7 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-echo "127.0.0.1:8080    $1  www.$1" >> /etc/hosts
+echo "127.0.0.1    $1  www.$1" >> /etc/hosts
 
 echo "Creating LEMP stack in docker for wordpress"
 docker compose up -d
